@@ -34,7 +34,6 @@ public class StringCount {
         return contador;
     }
 
-
     public static boolean isPasswordSafe(String password) {
         char[] array = password.toCharArray();
 

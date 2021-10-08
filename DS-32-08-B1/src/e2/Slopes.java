@@ -10,9 +10,6 @@ public class Slopes {
         int largo = slopeMap.length, ancho = slopeMap[0].length;
         int posFinalEsquiadorI = 0, posFinalEsquiadorJ = 0;
 
-        //EXCEPCIONES
-        //+++++++++++++++++++++++++++++++
-
         for (int i = 0; i < largo; ++i) {
             if (slopeMap[i].length != largo) throw new IllegalArgumentException();
         }
@@ -25,7 +22,6 @@ public class Slopes {
 
         if (right >= ancho || right < 1) throw new IllegalArgumentException();
         if (down >= largo || down < 1) throw new IllegalArgumentException();
-        //+++++++++++++++++++++++++++++++
 
         int counterSalto = 1;
         for (int i = 0; i < largo; ++i) {
