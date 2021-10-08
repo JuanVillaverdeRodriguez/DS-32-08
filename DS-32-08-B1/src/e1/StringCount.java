@@ -62,19 +62,4 @@ public class StringCount {
         }
         return false;
     }
-
-    public static void main(String[] args) {
-        char a = 'm';
-        String cadena1 = "Two words";
-        String cadena2 = "Mm";
-        String cadena3 = "aAaaa3aa#aa";
-        String cadena4 = "aAaaa3aa#aa";
-
-        //System.out.println(countWords(cadena1));
-        //System.out.println(countChar(cadena2, a));
-        System.out.println(countCharIgnoringCase(cadena2, a));
-        //System.out.println(isPasswordSafe(cadena4));
-
-
-    }
 }
