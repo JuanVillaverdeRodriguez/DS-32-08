@@ -1,5 +1,5 @@
 package e1;
 
-interface Fantasmas {
+public class Fantasmas extends Residentes {
 
 }

@@ -1,6 +1,6 @@
 package e1;
 
-interface Estudiantes  {
+public class Estudiantes extends Residentes  {
 
 
 }
