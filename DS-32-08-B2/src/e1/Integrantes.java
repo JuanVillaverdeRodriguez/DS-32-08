@@ -6,7 +6,6 @@ public abstract class Integrantes {
     int edad;
     int recompensa;
 
-
     public String getNombre () {
         return this.nombre;
     }
