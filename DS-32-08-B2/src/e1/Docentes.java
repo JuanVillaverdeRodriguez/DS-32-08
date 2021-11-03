@@ -16,7 +16,6 @@ public class Docentes extends Personal {
         } catch (IllegalArgumentException ex) {
             System.out.println("Esta asignatura no existe o ya la esta impartiendo un docente");
         }
-
     }
 
     public String getAsignatura () {

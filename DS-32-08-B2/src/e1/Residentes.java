@@ -14,7 +14,7 @@ public class Residentes extends Integrantes {
             hogar = Casas.valueOf(inputCasa);
             this.casa = inputCasa;
         } catch (IllegalArgumentException ex) {
-            System.out.println("Esta casa no existe");
+            System.out.println("La casa proporcionada no existe");
         }
 
     }
@@ -22,5 +22,7 @@ public class Residentes extends Integrantes {
     public String getCasa() {
         return this.casa;
     }
+
+
 
 }

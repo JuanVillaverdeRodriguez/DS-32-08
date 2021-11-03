@@ -12,5 +12,6 @@ public abstract class Colegio {
         String listadoSalarios = "LOL";
         return listadoSalarios;
     }
+
 }
 

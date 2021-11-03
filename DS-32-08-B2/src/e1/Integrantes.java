@@ -15,7 +15,6 @@ public abstract class Integrantes {
         return this.apellido;
     }
 
-
     public int getEdad () {
         return this.edad;
     }
@@ -24,5 +23,4 @@ public abstract class Integrantes {
         return this.recompensa;
     }
 
-    //private String categoria;
 }
