@@ -16,4 +16,8 @@ public class Guardabosques extends Personal {
 
     }
 
+    public void setSalario (int nocturnidades) {
+        this.salario = 170 + (10 * nocturnidades);
+    }
+
 }

@@ -15,4 +15,8 @@ public class Conserjes extends Personal {
         this.recompensa += galeonesPorHorrocruxes * horrocruxesDestruidos;
 
     }
+
+    public void setSalario (int nocturnidades) {
+        this.salario = 150 + (10 * nocturnidades);
+    }
 }

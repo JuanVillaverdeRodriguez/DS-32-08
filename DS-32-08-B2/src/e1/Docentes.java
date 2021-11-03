@@ -31,13 +31,10 @@ public class Docentes extends Personal {
     public void setRecompensa (int horrocruxesDestruidos) {
         if (this.getAsignatura().compareTo("Defensa") == 0) {
             this.recompensa += galeonesPorHorrocruxes - (0.25 * galeonesPorHorrocruxes) * horrocruxesDestruidos;
-
         }
         else {
             this.recompensa += galeonesPorHorrocruxes * horrocruxesDestruidos;
-
         }
-
     }
 
     public void setSalario () {
@@ -56,8 +53,5 @@ public class Docentes extends Personal {
         else {
             this.salario = 200;
         }
-
-
     }
-
 }
