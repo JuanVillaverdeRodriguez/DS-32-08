@@ -5,6 +5,11 @@ public abstract class Integrantes {
     String apellido;
     int edad;
     int recompensa;
+    int horrocruxes;
+
+    public int getHorrocruxes() {
+        return this.horrocruxes;
+    }
 
     public String getNombre () {
         return this.nombre;

@@ -1,43 +1,24 @@
 package e1;
 
-enum Asignaturas {Historia, Transformaciones, Defensa, Herbologia, Pociones};
+
 
 public class Docentes extends Personal {
+    enum Asignaturas {Historia, Transformaciones, Defensa, Herbologia, Pociones};
     private final static int galeonesPorHorrocruxes = 50;
 
     private String asignatura;
     Asignaturas clase;
 
-    public Docentes (String nombre, String apellido, int edad, String inputAsignatura ) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.edad = edad;
+    public Docentes (String nombre, String apellido, int edad, String inputAsignatura, int horrocruxesDestruidos) {
+        super(nombre, apellido, edad);
+
         try {
             clase = Asignaturas.valueOf(inputAsignatura);
             this.asignatura = inputAsignatura;
         } catch (IllegalArgumentException ex) {
             System.out.println("Esta asignatura no existe o ya la esta impartiendo un docente");
         }
-        this.salario = 0;
-        this.recompensa = 0;
-    }
 
-    public String getAsignatura () {
-        return this.asignatura;
-    }
-
-
-
-    public void setRecompensa (int horrocruxesDestruidos) {
-        if (this.getAsignatura().compareTo("Defensa") == 0) {
-            this.recompensa += galeonesPorHorrocruxes - (0.25 * galeonesPorHorrocruxes) * horrocruxesDestruidos;
-        }
-        else {
-            this.recompensa += galeonesPorHorrocruxes * horrocruxesDestruidos;
-        }
-    }
-
-    public void setSalario () {
         if (this.asignatura.compareTo("Defensa") == 0) {
             this.salario = 500;
         }
@@ -53,5 +34,18 @@ public class Docentes extends Personal {
         else {
             this.salario = 200;
         }
+        this.horrocruxes = horrocruxesDestruidos;
+
+        if (this.getAsignatura().compareTo("Defensa") == 0) {
+            this.recompensa += galeonesPorHorrocruxes - (0.25 * galeonesPorHorrocruxes) * horrocruxesDestruidos;
+        }
+        else {
+            this.recompensa += galeonesPorHorrocruxes * horrocruxesDestruidos;
+        }
     }
+
+    public String getAsignatura () {
+        return this.asignatura;
+    }
+
 }

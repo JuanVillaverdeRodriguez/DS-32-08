@@ -1,8 +1,9 @@
 package e1;
 
-enum Casas {Gryffindor, Hufflepuff, Ravenclaw, Slytherin}
 
 public class Residentes extends Integrantes {
+    enum Casas {Gryffindor, Hufflepuff, Ravenclaw, Slytherin}
+
     private String casa;
     Casas hogar;
 
@@ -16,7 +17,6 @@ public class Residentes extends Integrantes {
         } catch (IllegalArgumentException ex) {
             System.out.println("La casa proporcionada no existe");
         }
-
     }
 
     public String getCasa() {
