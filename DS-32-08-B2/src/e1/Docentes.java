@@ -45,7 +45,7 @@ public class Docentes extends Personal {
     }
 
     public String integrante() {
-        return "Docente de" + this.asignatura;
+        return "Docente de " + this.asignatura;
     }
 
 }

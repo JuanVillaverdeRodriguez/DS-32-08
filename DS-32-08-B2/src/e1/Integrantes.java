@@ -4,7 +4,7 @@ public abstract class Integrantes {
     String nombre;
     String apellido;
     int edad;
-    int recompensa;
+    float recompensa;
     int horrocruxes;
 
     public abstract String integrante();
@@ -25,7 +25,7 @@ public abstract class Integrantes {
         return this.edad;
     }
 
-    public int getRecompensa () {
+    public float getRecompensa () {
         return this.recompensa;
     }
 

@@ -15,7 +15,7 @@ public class Fantasmas extends Residentes {
     }
 
     public String integrante() {
-        return "Fantasma de" + this.getCasa();
+        return "Fantasma de " + this.getCasa();
     }
 
 
