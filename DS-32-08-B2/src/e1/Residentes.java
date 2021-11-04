@@ -1,7 +1,7 @@
 package e1;
 
 
-public class Residentes extends Integrantes {
+public abstract class Residentes extends Integrantes {
     enum Casas {Gryffindor, Hufflepuff, Ravenclaw, Slytherin}
 
     private String casa;

@@ -36,7 +36,7 @@ public class Docentes extends Personal {
         }
         this.horrocruxes = horrocruxesDestruidos;
 
-        if (this.getAsignatura().compareTo("Defensa") == 0) {
+        if (this.asignatura.compareTo("Defensa") == 0) {
             this.recompensa += galeonesPorHorrocruxes - (0.25 * galeonesPorHorrocruxes) * horrocruxesDestruidos;
         }
         else {
@@ -44,8 +44,8 @@ public class Docentes extends Personal {
         }
     }
 
-    public String getAsignatura () {
-        return this.asignatura;
+    public String integrante() {
+        return "Docente de" + this.asignatura;
     }
 
 }

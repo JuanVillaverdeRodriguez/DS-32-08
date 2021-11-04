@@ -10,4 +10,8 @@ public class Guardabosques extends Personal {
         this.salario = 170 + (10 * nocturnidades);
     }
 
+    public String integrante() {
+        return "Guardabosques";
+    }
+
 }

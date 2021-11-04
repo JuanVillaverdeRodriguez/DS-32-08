@@ -10,4 +10,9 @@ public class Conserjes extends Personal {
         this.salario = 150 + (10 * nocturnidades);
     }
 
+    public String integrante() {
+        return "Conserje";
+    }
+
+
 }

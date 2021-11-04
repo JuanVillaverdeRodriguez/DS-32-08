@@ -7,6 +7,8 @@ public abstract class Integrantes {
     int recompensa;
     int horrocruxes;
 
+    public abstract String integrante();
+
     public int getHorrocruxes() {
         return this.horrocruxes;
     }
