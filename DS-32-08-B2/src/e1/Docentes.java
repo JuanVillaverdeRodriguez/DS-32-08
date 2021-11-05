@@ -1,7 +1,5 @@
 package e1;
 
-
-
 public class Docentes extends Personal {
     enum Asignaturas {Historia, Transformaciones, Defensa, Herbologia, Pociones};
     private final static int galeonesPorHorrocruxes = 50;
@@ -46,6 +44,10 @@ public class Docentes extends Personal {
 
     public String integrante() {
         return "Docente de " + this.asignatura;
+    }
+
+    public String getImprimirSalarios() {
+        return this.getNombre() + " " + this.getApellido() + "(" + this.integrante() + "): " + this.getSalario() + " galeones\n";
     }
 
 }

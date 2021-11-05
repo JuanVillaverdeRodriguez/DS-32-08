@@ -17,4 +17,8 @@ public class Estudiantes extends Residentes  {
     public String integrante() {
         return "Estudiante de " + this.getCasa();
     }
+
+    public String getImprimirSalarios() {
+        return "";
+    }
 }

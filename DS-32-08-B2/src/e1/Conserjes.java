@@ -14,5 +14,9 @@ public class Conserjes extends Personal {
         return "Conserje";
     }
 
+    public String getImprimirSalarios() {
+        return this.getNombre() + " " + this.getApellido() + "(" + this.integrante() + "): " + this.getSalario() + " galeones\n";
+    }
+
 
 }

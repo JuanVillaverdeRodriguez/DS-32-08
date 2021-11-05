@@ -23,6 +23,4 @@ public abstract class Residentes extends Integrantes {
         return this.casa;
     }
 
-
-
 }

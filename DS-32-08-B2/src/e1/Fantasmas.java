@@ -18,5 +18,7 @@ public class Fantasmas extends Residentes {
         return "Fantasma de " + this.getCasa();
     }
 
-
+    public String getImprimirSalarios() {
+        return "";
+    }
 }

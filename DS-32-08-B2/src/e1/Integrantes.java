@@ -6,27 +6,36 @@ public abstract class Integrantes {
     int edad;
     float recompensa;
     int horrocruxes;
+    int salario = 0;
 
     public abstract String integrante();
+
+    public abstract String getImprimirSalarios();
+
+    public float getSalario() {
+        return this.salario;
+    }
 
     public int getHorrocruxes() {
         return this.horrocruxes;
     }
 
-    public String getNombre () {
+    public String getNombre() {
         return this.nombre;
     }
 
-    public String getApellido () {
+    public String getApellido() {
         return this.apellido;
     }
 
-    public int getEdad () {
+    public int getEdad() {
         return this.edad;
     }
 
-    public float getRecompensa () {
+    public float getRecompensa() {
         return this.recompensa;
     }
+
+
 
 }
