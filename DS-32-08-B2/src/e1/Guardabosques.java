@@ -18,6 +18,10 @@ public class Guardabosques extends Personal {
         return this.getNombre() + " " + this.getApellido() + "(" + this.integrante() + "): " + this.getSalario() + " galeones\n";
     }
 
+    public String getImprimirRecompensas() {
+        return this.getNombre() + " " + this.getApellido() + "(" + this.integrante() + "," + this.getHorrocruxes() + " horrocruxes): " + this.getRecompensa() + " galeones\n";
+    }
+
 
 
 

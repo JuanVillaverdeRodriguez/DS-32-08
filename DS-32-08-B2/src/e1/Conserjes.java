@@ -18,5 +18,8 @@ public class Conserjes extends Personal {
         return this.getNombre() + " " + this.getApellido() + "(" + this.integrante() + "): " + this.getSalario() + " galeones\n";
     }
 
+    public String getImprimirRecompensas() {
+        return this.nombre + " " + this.apellido + "(" + this.integrante() + " horrocruxes): " + this.recompensa + " galeones\n";
+    }
 
 }

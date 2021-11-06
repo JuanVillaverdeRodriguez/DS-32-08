@@ -7,15 +7,9 @@ public class Docentes extends Personal {
     private String asignatura;
     Asignaturas clase;
 
-    public Docentes (String nombre, String apellido, int edad, String inputAsignatura, int horrocruxesDestruidos) {
+    public Docentes (String nombre, String apellido, int edad, Asignaturas inputAsignatura, int horrocruxesDestruidos) {
         super(nombre, apellido, edad);
-
-        try {
-            clase = Asignaturas.valueOf(inputAsignatura);
-            this.asignatura = inputAsignatura;
-        } catch (IllegalArgumentException ex) {
-            System.out.println("Esta asignatura no existe o ya la esta impartiendo un docente");
-        }
+        this.asignatura = inputAsignatura.toString();
 
         if (this.asignatura.compareTo("Defensa") == 0) {
             this.salario = 500;
@@ -48,6 +42,10 @@ public class Docentes extends Personal {
 
     public String getImprimirSalarios() {
         return this.getNombre() + " " + this.getApellido() + "(" + this.integrante() + "): " + this.getSalario() + " galeones\n";
+    }
+
+    public String getImprimirRecompensas() {
+        return this.nombre + " " + this.apellido + "(" + this.integrante() + "," + this.horrocruxes + " horrocruxes): " + this.recompensa + " galeones\n";
     }
 
 }

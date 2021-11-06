@@ -3,7 +3,7 @@ package e1;
 public class Fantasmas extends Residentes {
     private final static int galeonesPorHorrocruxes = 80;
 
-    public Fantasmas(String nombre, String apellido, int edad, String inputCasa, int horrocruxesDestruidos) {
+    public Fantasmas(String nombre, String apellido, int edad, Casas inputCasa, int horrocruxesDestruidos) {
         super(nombre, apellido, edad, inputCasa);
         this.horrocruxes = horrocruxesDestruidos;
         if (this.getCasa().compareTo("Slytherin") == 0) {
@@ -20,5 +20,10 @@ public class Fantasmas extends Residentes {
 
     public String getImprimirSalarios() {
         return "";
+    }
+
+
+    public String getImprimirRecompensas() {
+        return this.nombre + " " + this.apellido + "(" + this.integrante() +  "," + this.horrocruxes + " horrocruxes): " + this.recompensa + " galeones\n";
     }
 }

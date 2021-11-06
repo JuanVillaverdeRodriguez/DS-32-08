@@ -12,37 +12,38 @@ public class Colegio {
 
     public String imprimirRecompensas() {
         float sumaRecompensas = 0;
-        String listadoRecompensas = "";
+        StringBuilder listadoRecompensas = new StringBuilder();
+
         for (Integrantes f: x) {
             sumaRecompensas += f.getRecompensa();
-            listadoRecompensas = listadoRecompensas + f.getNombre() + " " + f.getApellido() + "(" + f.integrante() + "," + f.getHorrocruxes() + " horrocruxes): " + f.getRecompensa() + " galeones\n";;
+            listadoRecompensas.append(f.getImprimirRecompensas());
         }
-        listadoRecompensas = listadoRecompensas + "La recompensa total del Colegio Hogwarts es de " + sumaRecompensas + "\n";
+        listadoRecompensas.append("La recompensa total del Colegio Hogwarts es de ").append(sumaRecompensas).append("\n");
 
-        return listadoRecompensas;
+        return listadoRecompensas.toString();
     }
 
     public String imprimirSalarios() {
         float sumaSalarios = 0;
-        String listadoSalarios = "";
+        StringBuilder listadoSalarios = new StringBuilder();
+
         for (Integrantes f : x) {
             sumaSalarios += f.getSalario();
-            listadoSalarios = listadoSalarios + f.getImprimirSalarios();
+            listadoSalarios.append(f.getImprimirSalarios());
         }
+        listadoSalarios.append("El gasto de Hogwarts en personal es de ").append(sumaSalarios).append(" galeones");
 
-        listadoSalarios = listadoSalarios + "El gasto de Hogwarts en personal es de " + sumaSalarios +  " galeones";
-
-        return listadoSalarios;
+        return listadoSalarios.toString();
     }
-
+    /*
     public static void main(String[] args) {
         Colegio c1 = new Colegio();
         Integrantes i1 = new Conserjes("pepe", "manuel", 18, 1, 2);
         Integrantes i2 = new Conserjes("paco", "mermela", 23, 1, 2);
         Integrantes i3 = new Guardabosques("pepa", "pig", 46, 5,4);
-        Integrantes i4 = new Fantasmas("maria", "umpajote", 46, "Slytherin",2);
-        Integrantes i5 = new Estudiantes("laura", "ciii", 46, "Gryffindor",0);
-        /*Integrantes i6 = new Docentes("pepito", "grillo", 2, "Pociones",3);*/
+        Integrantes i4 = new Fantasmas("maria", "umpajote", 46, Residentes.Casas.Gryffindor,2);
+        Integrantes i5 = new Estudiantes("laura", "ciii", 46, Residentes.Casas.Gryffindor,0);
+        Integrantes i6 = new Docentes("pepito", "grillo", 2,Docentes.Asignaturas.Herbologia ,3);
 
 
         c1.x.add(i1);
@@ -50,12 +51,12 @@ public class Colegio {
         c1.x.add(i3);
         c1.x.add(i4);
         c1.x.add(i5);
-        /*c1.x.add(i6);*/
+        c1.x.add(i6);
 
         System.out.println(c1.imprimirRecompensas());
-        System.out.println(c1.imprimirSalarios());
+        //System.out.println(c1.imprimirSalarios());
 
-    }
+    }*/
 
 }
 

@@ -1,6 +1,9 @@
 package e1;
 
-public abstract class Integrantes {
+import java.util.ArrayList;
+import java.util.List;
+
+public abstract class Integrantes  {
     String nombre;
     String apellido;
     int edad;
@@ -8,9 +11,12 @@ public abstract class Integrantes {
     int horrocruxes;
     int salario = 0;
 
+
     public abstract String integrante();
 
     public abstract String getImprimirSalarios();
+
+    public abstract String getImprimirRecompensas();
 
     public float getSalario() {
         return this.salario;
@@ -35,7 +41,5 @@ public abstract class Integrantes {
     public float getRecompensa() {
         return this.recompensa;
     }
-
-
 
 }
