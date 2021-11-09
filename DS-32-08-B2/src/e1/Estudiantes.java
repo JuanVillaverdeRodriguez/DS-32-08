@@ -23,6 +23,6 @@ public class Estudiantes extends Residentes  {
     }
 
     public String getImprimirRecompensas() {
-        return this.nombre + " " + this.apellido + "(" + this.integrante() +  "," + this.horrocruxes + " horrocruxes): " + this.recompensa + " galeones\n";
+        return this.getNombre() + " " + this.getApellido() + "(" + this.integrante() + " ," + this.getHorrocruxes() + " horrocruxes): " + this.getRecompensa() + " galeones\n";
     }
 }

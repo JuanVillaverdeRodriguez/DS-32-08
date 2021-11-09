@@ -19,7 +19,7 @@ public class Conserjes extends Personal {
     }
 
     public String getImprimirRecompensas() {
-        return this.nombre + " " + this.apellido + "(" + this.integrante() + " horrocruxes): " + this.recompensa + " galeones\n";
+        return this.getNombre() + " " + this.getApellido() + "(" + this.integrante() + " ," + this.getHorrocruxes() + " horrocruxes): " + this.getRecompensa() + " galeones\n";
     }
 
 }

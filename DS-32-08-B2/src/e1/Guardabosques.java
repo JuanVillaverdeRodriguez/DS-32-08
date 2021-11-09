@@ -19,7 +19,7 @@ public class Guardabosques extends Personal {
     }
 
     public String getImprimirRecompensas() {
-        return this.getNombre() + " " + this.getApellido() + "(" + this.integrante() + "," + this.getHorrocruxes() + " horrocruxes): " + this.getRecompensa() + " galeones\n";
+        return this.getNombre() + " " + this.getApellido() + "(" + this.integrante() + " ," + this.getHorrocruxes() + " horrocruxes): " + this.getRecompensa() + " galeones\n";
     }
 
 

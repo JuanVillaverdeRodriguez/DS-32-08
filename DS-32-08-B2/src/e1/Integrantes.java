@@ -10,7 +10,7 @@ public abstract class Integrantes  {
     float recompensa;
     int horrocruxes;
     int salario = 0;
-
+    String asignatura;
 
     public abstract String integrante();
 
@@ -18,7 +18,11 @@ public abstract class Integrantes  {
 
     public abstract String getImprimirRecompensas();
 
-    public float getSalario() {
+    public String getAsignatura() {
+        return this.asignatura;
+    }
+
+    public int getSalario() {
         return this.salario;
     }
 
