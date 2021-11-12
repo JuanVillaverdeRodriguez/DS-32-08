@@ -61,8 +61,5 @@ class ColegioTest {
         c1.x.add(i6);
 
         assertEquals(resultadoImprimirSalarios, c1.imprimirSalarios());
-
     }
-
-
 }

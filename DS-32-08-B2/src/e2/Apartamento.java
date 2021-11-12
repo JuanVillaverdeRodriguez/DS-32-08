@@ -34,34 +34,4 @@ public class Apartamento extends GestionDeApartamentos implements Comparable<Apa
             return 0;
         }
     }
-
-    public static void main(String[] args) {
-        Comparator<Apartamento> comparator = new ComparatorPlazasDeGaraje();
-        GestionDeApartamentos g1 = new GestionDeApartamentos(comparator);
-
-        Apartamento a1 = new Apartamento(10, 36121, 2, "2D", "San Jorge", 30000, 1, 200, 300, 100);
-        Apartamento a2 = new Apartamento(10, 36121, 2, "2D", "San Jorge", 70000, 2, 240, 800);
-        Apartamento a3 = new Apartamento(40, 36100, 3, "2I", "San Jorge", 40000,3, 240);
-
-        g1.listaApartamentos.add(a2);
-        g1.listaApartamentos.add(a1);
-        g1.listaApartamentos.add(a3);
-
-        System.out.println("DESORDENADO: ");
-        for (int i = 0; i < g1.listaApartamentos.size(); ++i) {
-            System.out.println(g1.listaApartamentos.get(i).numeroReferencia);
-        }
-
-        System.out.println("COMPARADOR POR ORDEN NATURAL (COMPARABLE): ");
-        Collections.sort(g1.listaApartamentos); //COMPARADOR POR ORDEN NATURAL (COMPARABLE)
-        for (int i = 0; i < g1.listaApartamentos.size(); ++i) {
-            System.out.println(g1.listaApartamentos.get(i).numeroReferencia);
-        }
-
-        System.out.println("COMPARADOR POR ARGUMENTO (COMPARATOR): ");
-        Collections.sort(g1.listaApartamentos, g1.C); //COMPARADOR POR ARGUMENTO (COMPARATOR)
-        for (int i = 0; i < g1.listaApartamentos.size(); ++i) {
-            System.out.println(g1.listaApartamentos.get(i).numeroReferencia);
-        }
-    }
 }
