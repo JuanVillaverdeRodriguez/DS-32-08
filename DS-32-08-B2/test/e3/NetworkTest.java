@@ -102,6 +102,7 @@ class NetworkTest {
         assertEquals("Surf", N.getInterests().get(2).getTopicOfInterest());
         assertEquals("Paracaidismo", N.getInterests().get(3).getTopicOfInterest());
         assertEquals("Musica", N.getInterests().get(4).getTopicOfInterest());
+        assertEquals("Anime", N.getInterests().get(5).getTopicOfInterest());
 
     }
 
